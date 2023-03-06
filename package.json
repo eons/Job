@@ -1,0 +1,18 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webTests": "npx playwright test tests --grep @web",
+    "RegressionTests": "npx playwright test tests",
+    "APitests": "npx playwright test tests --grep @API",
+    "ChromeNewConfig": "npx playwright test tests/name.spec.js --config playwright.config1.js --project=chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}
